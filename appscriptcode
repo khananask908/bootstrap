@@ -1,0 +1,12 @@
+function onEdit(e) {
+  var sheet = e.source.getActiveSheet();
+  var editedRow = e.range.getRow();
+  var editedColumn = e.range.getColumn();
+
+  // Ensure the edited column is Age (3rd column in your sheet)
+  if (editedColumn === 3) {
+    var age = sheet.getRange(editedRow, editedColumn).getValue();
+    var status = age >= 60 ? "Senior" : "Junior";
+    sheet.getRange(editedRow, 4).setValue(status); // Set Status in 4th column
+  }
+}
