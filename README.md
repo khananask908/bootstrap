@@ -16,4 +16,4 @@ Test the Form:
 Submit the form through the browser, and the data will be sent to a Google Sheet for verification.
 
 
-//aooscriptcode is also there 
+//appscriptcode is also there 
